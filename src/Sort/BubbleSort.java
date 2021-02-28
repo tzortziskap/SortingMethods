@@ -15,7 +15,7 @@ import tzortziskap.model.Tshirt;
  */
 public class BubbleSort {
 
-    private static List<Tshirt> myBubbleSortbyColorInAsceding(List<Tshirt> tShirt) {
+    private static List<Tshirt> myBubbleSortbyColorInAscedingInBubbleSort(List<Tshirt> tShirt) {
         List<Tshirt> tmpShirt = new ArrayList<Tshirt>();
         for (int i = 1; i < tShirt.size(); i++) {
             for (int j = 0; j < tShirt.size() - i; j++) {
@@ -30,7 +30,7 @@ public class BubbleSort {
         return tShirt;
     }
 
-    private static List<Tshirt> myBubbleSortbyColorInDesceding(List<Tshirt> tShirt) {
+    private static List<Tshirt> myBubbleSortbyColorInDescedingInBubbleSort(List<Tshirt> tShirt) {
         List<Tshirt> tmpShirt = new ArrayList<Tshirt>();
         for (int i = 1; i < tShirt.size(); i++) {
             for (int j = 0; j < tShirt.size() - i; j++) {
@@ -45,23 +45,27 @@ public class BubbleSort {
         return tShirt;
     }
 
-    public static void printByColorInDesceding(List<Tshirt> tshirts) {
-        tshirts = myBubbleSortbyColorInDesceding(tshirts);
-        System.out.println("The T-Shirts by color in descending: ");
+    public static void printByColorInDescedingInBubbleSort(List<Tshirt> tshirts) {
+        tshirts = myBubbleSortbyColorInDescedingInBubbleSort(tshirts);
+         System.out.println("--------------------------------------------------------");
+        System.out.println("The T-Shirts by color in descending in bubble sort: ");
+         System.out.println("--------------------------------------------------------");
         for (int i = 0; i < tshirts.size(); i++) {
             System.out.println(tshirts.get(i).toString());
         }
     }
 
-    public static void printByColorInAsceding(List<Tshirt> tshirts) {
-        tshirts = myBubbleSortbyColorInAsceding(tshirts);
-        System.out.println("The T-Shirts by color in ascending: ");
+    public static void printByColorInAscedingInBubbleSort(List<Tshirt> tshirts) {
+        tshirts = myBubbleSortbyColorInAscedingInBubbleSort(tshirts);
+         System.out.println("--------------------------------------------------------");
+        System.out.println("The T-Shirts by color in ascending in bubble sort: ");
+         System.out.println("--------------------------------------------------------");
         for (int i = 0; i < tshirts.size(); i++) {
             System.out.println(tshirts.get(i).toString());
         }
     }
     
-    private static List<Tshirt> myBubbleSortbySizeInAsceding(List<Tshirt> tShirt) {
+    private static List<Tshirt> myBubbleSortbySizeInAscedingInBubbleSort(List<Tshirt> tShirt) {
         List<Tshirt> tmpShirt = new ArrayList<Tshirt>();
         for (int i = 1; i < tShirt.size(); i++) {
             for (int j = 0; j < tShirt.size() - i; j++) {
@@ -76,7 +80,7 @@ public class BubbleSort {
         return tShirt;
     }
 
-    private static List<Tshirt> myBubbleSortbySizeInDesceding(List<Tshirt> tShirt) {
+    private static List<Tshirt> myBubbleSortbySizeInDescedingInBubbleSort(List<Tshirt> tShirt) {
         List<Tshirt> tmpShirt = new ArrayList<Tshirt>();
         for (int i = 1; i < tShirt.size(); i++) {
             for (int j = 0; j < tShirt.size() - i; j++) {
@@ -91,23 +95,27 @@ public class BubbleSort {
         return tShirt;
     }
 
-    public static void printBySizeInDesceding(List<Tshirt> tshirts) {
-        tshirts = myBubbleSortbySizeInDesceding(tshirts);
-        System.out.println("The T-Shirts by size in descending: ");
+    public static void printBySizeInDescedingInBubbleSort(List<Tshirt> tshirts) {
+        tshirts = myBubbleSortbySizeInDescedingInBubbleSort(tshirts);
+         System.out.println("--------------------------------------------------------");
+        System.out.println("The T-Shirts by size in descending in bubble sort: ");
+         System.out.println("--------------------------------------------------------");
         for (int i = 0; i < tshirts.size(); i++) {
             System.out.println(tshirts.get(i).toString());
         }
     }
 
-    public static void printBySizeInAsceding(List<Tshirt> tshirts) {
-        tshirts = myBubbleSortbySizeInAsceding(tshirts);
-        System.out.println("The T-Shirts by size in ascending: ");
+    public static void printBySizeInAscedingInBubbleSort(List<Tshirt> tshirts) {
+        tshirts = myBubbleSortbySizeInAscedingInBubbleSort(tshirts);
+         System.out.println("--------------------------------------------------------");
+        System.out.println("The T-Shirts by size in ascending in bubble sort: ");
+         System.out.println("--------------------------------------------------------");
         for (int i = 0; i < tshirts.size(); i++) {
             System.out.println(tshirts.get(i).toString());
         }
     }
     
-    private static List<Tshirt> myBubbleSortbyFabricInAsceding(List<Tshirt> tShirt) {
+    private static List<Tshirt> myBubbleSortbyFabricInAscedingInBubbleSort(List<Tshirt> tShirt) {
         List<Tshirt> tmpShirt = new ArrayList<Tshirt>();
         for (int i = 1; i < tShirt.size(); i++) {
             for (int j = 0; j < tShirt.size() - i; j++) {
@@ -122,7 +130,7 @@ public class BubbleSort {
         return tShirt;
     }
 
-    private static List<Tshirt> myBubbleSortbyFabricInDesceding(List<Tshirt> tShirt) {
+    private static List<Tshirt> myBubbleSortbyFabricInDescedingInBubbleSort(List<Tshirt> tShirt) {
         List<Tshirt> tmpShirt = new ArrayList<Tshirt>();
         for (int i = 1; i < tShirt.size(); i++) {
             for (int j = 0; j < tShirt.size() - i; j++) {
@@ -137,17 +145,77 @@ public class BubbleSort {
         return tShirt;
     }
 
-    public static void printByFabricInDesceding(List<Tshirt> tshirts) {
-        tshirts = myBubbleSortbyFabricInDesceding(tshirts);
-        System.out.println("The T-Shirts by fabric in descending: ");
+    public static void printByFabricInDescedingInBubbleSort(List<Tshirt> tshirts) {
+        tshirts = myBubbleSortbyFabricInDescedingInBubbleSort(tshirts);
+         System.out.println("--------------------------------------------------------");
+        System.out.println("The T-Shirts by fabric in descending in bubble sort: ");
+         System.out.println("--------------------------------------------------------");
         for (int i = 0; i < tshirts.size(); i++) {
             System.out.println(tshirts.get(i).toString());
         }
     }
 
-    public static void printByFabricInAsceding(List<Tshirt> tshirts) {
-        tshirts = myBubbleSortbyFabricInAsceding(tshirts);
-        System.out.println("The T-Shirts by fabric in ascending: ");
+    public static void printByFabricInAscedingInBubbleSort(List<Tshirt> tshirts) {
+        tshirts = myBubbleSortbyFabricInAscedingInBubbleSort(tshirts);
+         System.out.println("--------------------------------------------------------");
+        System.out.println("The T-Shirts by fabric in ascending in bubble sort: ");
+         System.out.println("--------------------------------------------------------");
+        for (int i = 0; i < tshirts.size(); i++) {
+            System.out.println(tshirts.get(i).toString());
+        }
+    }
+    
+    private static int totalOrdinal(Tshirt tshirt){
+        int total;
+        total = tshirt.getColor().ordinal() + tshirt.getFabric().ordinal() + tshirt.getSize().ordinal();
+        return total;
+    }
+    
+    private static List<Tshirt> myBubbleSortbyAllInAscedingInBubbleSort(List<Tshirt> tShirt) {
+        List<Tshirt> tmpShirt = new ArrayList<Tshirt>();
+        for (int i = 1; i < tShirt.size(); i++) {
+            for (int j = 0; j < tShirt.size() - i; j++) {
+                if (totalOrdinal(tShirt.get(j)) > totalOrdinal(tShirt.get(j + 1))){
+                    tmpShirt.add(tShirt.get(j + 1));
+                    tShirt.set(j + 1, tShirt.get(j));
+                    tShirt.set(j, tmpShirt.get(0));
+                    tmpShirt.remove(0);
+                }
+            }
+        }
+        return tShirt;
+    }
+
+    private static List<Tshirt> myBubbleSortbyAllInDescedingInBubbleSort(List<Tshirt> tShirt) {
+        List<Tshirt> tmpShirt = new ArrayList<Tshirt>();
+        for (int i = 1; i < tShirt.size(); i++) {
+            for (int j = 0; j < tShirt.size() - i; j++) {
+                if (totalOrdinal(tShirt.get(j)) < totalOrdinal(tShirt.get(j + 1)))  {
+                    tmpShirt.add(tShirt.get(j + 1));
+                    tShirt.set(j + 1, tShirt.get(j));
+                    tShirt.set(j, tmpShirt.get(0));
+                    tmpShirt.remove(0);
+                }
+            }
+        }
+        return tShirt;
+    }
+
+    public static void printByAllInDescedingInBubbleSort(List<Tshirt> tshirts) {
+        tshirts = myBubbleSortbyAllInDescedingInBubbleSort(tshirts);
+         System.out.println("--------------------------------------------------------");
+        System.out.println("The T-Shirts by all in descending in bubble sort: ");
+         System.out.println("--------------------------------------------------------");
+        for (int i = 0; i < tshirts.size(); i++) {
+            System.out.println(tshirts.get(i).toString());
+        }
+    }
+
+    public static void printByAllInAscedingInBubbleSort(List<Tshirt> tshirts) {
+        tshirts = myBubbleSortbyAllInAscedingInBubbleSort(tshirts);
+         System.out.println("--------------------------------------------------------");
+        System.out.println("The T-Shirts by all in ascending in bubble sort: ");
+         System.out.println("--------------------------------------------------------");
         for (int i = 0; i < tshirts.size(); i++) {
             System.out.println(tshirts.get(i).toString());
         }
