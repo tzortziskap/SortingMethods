@@ -5,7 +5,6 @@
  */
 package Sort;
 
-
 import java.util.List;
 import tzortziskap.model.Tshirt;
 
@@ -44,14 +43,14 @@ public class QuickSort {
 
     public static void printByColorInAscedingInQuickSort(List<Tshirt> tShirt, int low, int high, int sortOrder) {
         List<Tshirt> tshirts = sortByColorInAscedingInQuickSort(tShirt, low, high, sortOrder);
-         System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------");
         System.out.println("The T-Shirts by color in ascending in quick sort:");
-         System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------");
         for (Tshirt tshirt : tshirts) {
             System.out.println(tshirt.toString());
         }
     }
-            
+
     private static int partitionByColorInDescedingInQuickSort(List<Tshirt> arr, int low, int high, int sortOrder) {
         Tshirt pivot = arr.get(high);
         int i = (low - 1);
@@ -68,7 +67,7 @@ public class QuickSort {
         arr.set(high, temp);
         return i + 1;
     }
-            
+
     public static List<Tshirt> sortByColorInDescedingInQuickSort(List<Tshirt> tShirt, int low, int high, int sortOrder) {
 
         if (low < high) {
@@ -81,14 +80,14 @@ public class QuickSort {
 
     public static void printByColorInDescedingInQuickSort(List<Tshirt> tShirt, int low, int high, int sortOrder) {
         List<Tshirt> tshirts = sortByColorInDescedingInQuickSort(tShirt, low, high, sortOrder);
-         System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------");
         System.out.println("The T-Shirts by color in descending in quick sort:");
-         System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------");
         for (Tshirt tshirt : tshirts) {
             System.out.println(tshirt.toString());
         }
     }
-    
+
     private static int partitionBySizeInAscedingInQuickSort(List<Tshirt> arr, int low, int high, int sortOrder) {
         Tshirt pivot = arr.get(high);
         int i = (low - 1);
@@ -118,14 +117,14 @@ public class QuickSort {
 
     public static void printBySizeInAscedingInQuickSort(List<Tshirt> tShirt, int low, int high, int sortOrder) {
         List<Tshirt> tshirts = sortBySizeInAscedingInQuickSort(tShirt, low, high, sortOrder);
-         System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------");
         System.out.println("The T-Shirts by size in ascending in quick sort:");
-         System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------");
         for (Tshirt tshirt : tshirts) {
             System.out.println(tshirt.toString());
         }
     }
-            
+
     private static int partitionBySizeInDescedingInQuickSort(List<Tshirt> arr, int low, int high, int sortOrder) {
         Tshirt pivot = arr.get(high);
         int i = (low - 1);
@@ -142,7 +141,7 @@ public class QuickSort {
         arr.set(high, temp);
         return i + 1;
     }
-            
+
     public static List<Tshirt> sortBySizeInDescedingInQuickSort(List<Tshirt> tShirt, int low, int high, int sortOrder) {
 
         if (low < high) {
@@ -155,15 +154,15 @@ public class QuickSort {
 
     public static void printBySizeInDescedingInQuickSort(List<Tshirt> tShirt, int low, int high, int sortOrder) {
         List<Tshirt> tshirts = sortBySizeInDescedingInQuickSort(tShirt, low, high, sortOrder);
-         System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------");
         System.out.println("The T-Shirts by size in descending in quick sort:");
-         System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------");
         for (Tshirt tshirt : tshirts) {
             System.out.println(tshirt.toString());
         }
     }
-    
-     private static int partitionByFabricInAscedingInQuickSort(List<Tshirt> arr, int low, int high, int sortOrder) {
+
+    private static int partitionByFabricInAscedingInQuickSort(List<Tshirt> arr, int low, int high, int sortOrder) {
         Tshirt pivot = arr.get(high);
         int i = (low - 1);
         for (int j = low; j < high; j++) {
@@ -192,14 +191,14 @@ public class QuickSort {
 
     public static void printByFabricInAscedingInQuickSort(List<Tshirt> tShirt, int low, int high, int sortOrder) {
         List<Tshirt> tshirts = sortByFabricInAscedingInQuickSort(tShirt, low, high, sortOrder);
-         System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------");
         System.out.println("The T-Shirts by fabric in ascending in quick sort:");
-         System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------");
         for (Tshirt tshirt : tshirts) {
             System.out.println(tshirt.toString());
         }
     }
-            
+
     private static int partitionByFabricInDescedingInQuickSort(List<Tshirt> arr, int low, int high, int sortOrder) {
         Tshirt pivot = arr.get(high);
         int i = (low - 1);
@@ -216,7 +215,7 @@ public class QuickSort {
         arr.set(high, temp);
         return i + 1;
     }
-            
+
     public static List<Tshirt> sortByFabricInDescedingInQuickSort(List<Tshirt> tShirt, int low, int high, int sortOrder) {
 
         if (low < high) {
@@ -229,21 +228,21 @@ public class QuickSort {
 
     public static void printByFabricInDescedingInQuickSort(List<Tshirt> tShirt, int low, int high, int sortOrder) {
         List<Tshirt> tshirts = sortByFabricInDescedingInQuickSort(tShirt, low, high, sortOrder);
-         System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------");
         System.out.println("The T-Shirts by fabric in descending in quick sort:");
-         System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------");
         for (Tshirt tshirt : tshirts) {
             System.out.println(tshirt.toString());
         }
     }
-    
-    private static int totalOrdinal(Tshirt tshirt){
+
+    private static int totalOrdinal(Tshirt tshirt) {
         int total;
         total = tshirt.getColor().ordinal() + tshirt.getFabric().ordinal() + tshirt.getSize().ordinal();
         return total;
     }
-    
-     private static int partitionByAllInAscedingInQuickSort(List<Tshirt> arr, int low, int high, int sortOrder) {
+
+    private static int partitionByAllInAscedingInQuickSort(List<Tshirt> arr, int low, int high, int sortOrder) {
         Tshirt pivot = arr.get(high);
         int i = (low - 1);
         for (int j = low; j < high; j++) {
@@ -272,14 +271,14 @@ public class QuickSort {
 
     public static void printByAllInAscedingInQuickSort(List<Tshirt> tShirt, int low, int high, int sortOrder) {
         List<Tshirt> tshirts = sortByAllInAscedingInQuickSort(tShirt, low, high, sortOrder);
-         System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------");
         System.out.println("The T-Shirts by all in ascending in quick sort:");
-         System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------");
         for (Tshirt tshirt : tshirts) {
             System.out.println(tshirt.toString());
         }
     }
-            
+
     private static int partitionByAllInDescedingInQuickSort(List<Tshirt> arr, int low, int high, int sortOrder) {
         Tshirt pivot = arr.get(high);
         int i = (low - 1);
@@ -296,7 +295,7 @@ public class QuickSort {
         arr.set(high, temp);
         return i + 1;
     }
-            
+
     public static List<Tshirt> sortByAllInDescedingInQuickSort(List<Tshirt> tShirt, int low, int high, int sortOrder) {
 
         if (low < high) {
@@ -309,9 +308,9 @@ public class QuickSort {
 
     public static void printByAllInDescedingInQuickSort(List<Tshirt> tShirt, int low, int high, int sortOrder) {
         List<Tshirt> tshirts = sortByAllInDescedingInQuickSort(tShirt, low, high, sortOrder);
-         System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------");
         System.out.println("The T-Shirts by all in descending in quick sort:");
-         System.out.println("--------------------------------------------------------");
+        System.out.println("--------------------------------------------------------");
         for (Tshirt tshirt : tshirts) {
             System.out.println(tshirt.toString());
         }

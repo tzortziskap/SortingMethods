@@ -16,33 +16,35 @@ import tzortziskap.model.Tshirt;
  */
 public class BucketSort {
 
+    private static int totalOrdinal(Tshirt tshirt) {
+        int total;
+        total = tshirt.getColor().ordinal() + tshirt.getFabric().ordinal() + tshirt.getSize().ordinal();
+        return total;
+    }
+
     public static void myBucketSort(List<Tshirt> tShirt, int n) {
-        if (n <= 0) {
-            return;
+        // Create bucket array
+        List<Integer>[] bucket = new List[ n + 1 ];
+        // Associate a list with each index 
+        // in the bucket array         
+        for (int i = 0; i < bucket.length; i++) {
+            bucket[i] = new ArrayList<Integer>();
         }
-
-        List<Tshirt>[] bucket = new ArrayList[n];
-        
-
-        for (int i = 0; i < n; i++) {
-            bucket[i] = new ArrayList<Tshirt>();
+        // Assign numbers from array to the proper bucket
+        // by using hashing function
+        for (int i = 0; i < tShirt.size(); i++) {
+            //System.out.println("hash- " + hash(num));
+            bucket[i].add(tShirt.get(i).getColor().ordinal());
         }
-        for (int i = 0; i < n; i++) {
-            int ordinal = tShirt.get(i).getColor().ordinal() * n;
-            bucket[ordinal].add(tShirt.get(i));
-        }
-        
-        int index = 0;
-        for (int i = 0; i < n; i++) {
+       int index = 0;
+        for (int i = 0; i < bucket.length; i++) {
             for (int j = 0; j < bucket[i].size(); j++) {
                 tShirt.set(index++, bucket[i].get(j));
             }
         }
-        
-        for (int k = 0; k < tShirt.size(); k++) {
-            System.out.println(k + "  " + "Sorted B->" + tShirt.get(k).toString());
+        for (Tshirt t : tShirt){
+            System.out.println(t.toString());
         }
-
-    }
-
+    }  
 }
+
