@@ -15,6 +15,7 @@ import java.util.Random;
  */
 public class Tshirt {
 
+    private int id;
     private String name;
     private double price;
     private Color color;
@@ -45,6 +46,15 @@ public class Tshirt {
         this.fabric = fabric;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    
     public Size getSize() {
         return size;
     }
@@ -125,7 +135,8 @@ public class Tshirt {
     public String toString() {
         StringBuilder builder = new StringBuilder();
         
-        builder.append("TShirt:")
+        builder.append(id).append(") ")
+                .append("TShirt:")
                 .append("name=").append(name)
                 .append(", price=").append(price)
                 .append(", color=").append(color)
@@ -133,4 +144,5 @@ public class Tshirt {
                 .append(", fabric=").append(fabric);
         return builder.toString();
     }
+
 }

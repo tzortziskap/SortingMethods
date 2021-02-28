@@ -76,6 +76,7 @@ public class Cart {
     public void fillTshirts(int numberofTshirts) {
         for (int i = 0; i < numberofTshirts; i++) {
             Tshirt t = new Tshirt();
+            t.setId(i);
             tshirts.add(t);
         }
     }
@@ -83,6 +84,7 @@ public class Cart {
     public void printTshirts() {
         System.out.println("Your cart contains the following tshirts");
         for (int i = 0; i < tshirts.size(); i++) {
+            
             System.out.println(tshirts.get(i).toString());
             
         }

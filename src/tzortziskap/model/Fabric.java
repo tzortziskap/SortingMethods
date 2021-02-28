@@ -10,5 +10,5 @@ package tzortziskap.model;
  * @author tzortziskapellas
  */
 public enum Fabric {
-    WOOL, COTTON,  POLYESTER,  RAYON,  LINEN,  CASHMERE,  SILK
+    CASHMERE, COTTON, LINEN, POLYESTER, RAYON, SILK, WOOL
 }
