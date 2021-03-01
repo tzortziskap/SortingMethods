@@ -236,17 +236,24 @@ public class QuickSort {
         }
     }
 
-    private static int totalOrdinal(Tshirt tshirt) {
-        int total;
-        total = tshirt.getColor().ordinal() + tshirt.getFabric().ordinal() + tshirt.getSize().ordinal();
-        return total;
-    }
-
     private static int partitionByAllInAscedingInQuickSort(List<Tshirt> arr, int low, int high, int sortOrder) {
         Tshirt pivot = arr.get(high);
         int i = (low - 1);
         for (int j = low; j < high; j++) {
-            if (totalOrdinal(arr.get(j)) < totalOrdinal(pivot)) {
+            if (arr.get(j).getSize().ordinal() < pivot.getSize().ordinal()) {
+                i++;
+                Tshirt temp = arr.get(i);
+                arr.set(i, arr.get(j));
+                arr.set(j, temp);
+            } else if (arr.get(j).getSize().ordinal() == pivot.getSize().ordinal()
+                    && arr.get(j).getColor().ordinal() < pivot.getColor().ordinal()) {
+                i++;
+                Tshirt temp = arr.get(i);
+                arr.set(i, arr.get(j));
+                arr.set(j, temp);
+            } else if (arr.get(j).getSize().ordinal() == pivot.getSize().ordinal()
+                    && arr.get(j).getColor().ordinal() == pivot.getColor().ordinal()
+                    && arr.get(j).getFabric().ordinal() < pivot.getFabric().ordinal()) {
                 i++;
                 Tshirt temp = arr.get(i);
                 arr.set(i, arr.get(j));
@@ -283,7 +290,20 @@ public class QuickSort {
         Tshirt pivot = arr.get(high);
         int i = (low - 1);
         for (int j = low; j < high; j++) {
-            if (totalOrdinal(arr.get(j)) > totalOrdinal(pivot)) {
+            if (arr.get(j).getSize().ordinal() > pivot.getSize().ordinal()) {
+                i++;
+                Tshirt temp = arr.get(i);
+                arr.set(i, arr.get(j));
+                arr.set(j, temp);
+            } else if (arr.get(j).getSize().ordinal() == pivot.getSize().ordinal()
+                    && arr.get(j).getColor().ordinal() > pivot.getColor().ordinal()) {
+                i++;
+                Tshirt temp = arr.get(i);
+                arr.set(i, arr.get(j));
+                arr.set(j, temp);
+            } else if (arr.get(j).getSize().ordinal() == pivot.getSize().ordinal()
+                    && arr.get(j).getColor().ordinal() == pivot.getColor().ordinal()
+                    && arr.get(j).getFabric().ordinal() > pivot.getFabric().ordinal()) {
                 i++;
                 Tshirt temp = arr.get(i);
                 arr.set(i, arr.get(j));

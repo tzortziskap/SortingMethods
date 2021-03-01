@@ -137,8 +137,8 @@ public class Tshirt {
                 .append("TShirt:")
                 .append("name=").append(name)
                 .append(", price=").append(price)
-                .append(", color=").append(color)
                 .append(", size=").append(size)
+                .append(", color=").append(color)
                 .append(", fabric=").append(fabric)
                 .append(", totalOrdinal=").append((color.ordinal() + size.ordinal() + fabric.ordinal()));
         return builder.toString();
