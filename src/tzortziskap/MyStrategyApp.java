@@ -29,35 +29,35 @@ public class MyStrategyApp {
         cart.printTshirts();
         cart.payTotal();
         //Bubble sort
-        BubbleSort.printByColorInAscedingInBubbleSort(cart.getTshirts());
-        BubbleSort.printByColorInDescedingInBubbleSort(cart.getTshirts());
-
-        BubbleSort.printBySizeInAscedingInBubbleSort(cart.getTshirts());
-        BubbleSort.printBySizeInDescedingInBubbleSort(cart.getTshirts());
-
-        BubbleSort.printByFabricInAscedingInBubbleSort(cart.getTshirts());
-        BubbleSort.printByFabricInDescedingInBubbleSort(cart.getTshirts());
-
-        BubbleSort.printByAllInAscedingInBubbleSort(cart.getTshirts());
-        BubbleSort.printByAllInDescedingInBubbleSort(cart.getTshirts());
-        //End of bubble sort
+//        BubbleSort.printByColorInAscedingInBubbleSort(cart.getTshirts());
+//        BubbleSort.printByColorInDescedingInBubbleSort(cart.getTshirts());
+//
+//        BubbleSort.printBySizeInAscedingInBubbleSort(cart.getTshirts());
+//        BubbleSort.printBySizeInDescedingInBubbleSort(cart.getTshirts());
+//
+//        BubbleSort.printByFabricInAscedingInBubbleSort(cart.getTshirts());
+//        BubbleSort.printByFabricInDescedingInBubbleSort(cart.getTshirts());
+//
+//        BubbleSort.printByAllInAscedingInBubbleSort(cart.getTshirts());
+//        BubbleSort.printByAllInDescedingInBubbleSort(cart.getTshirts());
+//        //End of bubble sort
         //Bucket sort
-//        BucketSort.myBucketSort(cart.getTshirts(), 7);
-//        System.out.println("--------------------------------------------------------");
+        BucketSort.myBucketSort(cart.getTshirts(), 7);
+        System.out.println("--------------------------------------------------------");
 
-        //Quick sort
-        QuickSort.printByColorInAscedingInQuickSort(cart.getTshirts(), 0, cart.getTshirts().size() - 1, 0);
-        QuickSort.printByColorInDescedingInQuickSort(cart.getTshirts(), 0, cart.getTshirts().size() - 1, 0);
-
-        QuickSort.printBySizeInAscedingInQuickSort(cart.getTshirts(), 0, cart.getTshirts().size() - 1, 0);
-        QuickSort.printBySizeInDescedingInQuickSort(cart.getTshirts(), 0, cart.getTshirts().size() - 1, 0);
-
-        QuickSort.printByFabricInAscedingInQuickSort(cart.getTshirts(), 0, cart.getTshirts().size() - 1, 0);
-        QuickSort.printByFabricInDescedingInQuickSort(cart.getTshirts(), 0, cart.getTshirts().size() - 1, 0);
-
-        QuickSort.printByAllInAscedingInQuickSort(cart.getTshirts(), 0, cart.getTshirts().size() - 1, 0);
-        QuickSort.printByAllInDescedingInQuickSort(cart.getTshirts(), 0, cart.getTshirts().size() - 1, 0);
-        //End of quick sort
+//        //Quick sort
+//        QuickSort.printByColorInAscedingInQuickSort(cart.getTshirts(), 0, cart.getTshirts().size() - 1, 0);
+//        QuickSort.printByColorInDescedingInQuickSort(cart.getTshirts(), 0, cart.getTshirts().size() - 1, 0);
+//
+//        QuickSort.printBySizeInAscedingInQuickSort(cart.getTshirts(), 0, cart.getTshirts().size() - 1, 0);
+//        QuickSort.printBySizeInDescedingInQuickSort(cart.getTshirts(), 0, cart.getTshirts().size() - 1, 0);
+//
+//        QuickSort.printByFabricInAscedingInQuickSort(cart.getTshirts(), 0, cart.getTshirts().size() - 1, 0);
+//        QuickSort.printByFabricInDescedingInQuickSort(cart.getTshirts(), 0, cart.getTshirts().size() - 1, 0);
+//
+//        QuickSort.printByAllInAscedingInQuickSort(cart.getTshirts(), 0, cart.getTshirts().size() - 1, 0);
+//        QuickSort.printByAllInDescedingInQuickSort(cart.getTshirts(), 0, cart.getTshirts().size() - 1, 0);
+//        //End of quick sort
 
     }
 }

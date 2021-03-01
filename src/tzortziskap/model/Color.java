@@ -10,5 +10,5 @@ package tzortziskap.model;
  * @author tzortziskapellas
  */
 public enum Color {
-    BLUE, GREEN, INDIGO, ORANGE, RED, VIOLET, YELLOW,
+    BLUE, GREEN, INDIGO, ORANGE, RED, VIOLET, YELLOW
 }

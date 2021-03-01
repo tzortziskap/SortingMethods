@@ -23,23 +23,22 @@ public class BucketSort {
     }
 
     public static void myBucketSort(List<Tshirt> tShirt, int n) {
-        // Create bucket array
-        List<Integer>[] bucket = new List[ n + 1 ];
-        // Associate a list with each index 
-        // in the bucket array         
-        for (int i = 0; i < bucket.length; i++) {
-            bucket[i] = new ArrayList<Integer>();
+       
+        List<Tshirt>[] bucket = new List[n];
+             
+        for (int i = 0; i < n; i++) {
+            bucket[i] = new ArrayList<Tshirt>();
         }
-        // Assign numbers from array to the proper bucket
-        // by using hashing function
+        int index;
         for (int i = 0; i < tShirt.size(); i++) {
-            //System.out.println("hash- " + hash(num));
-            bucket[i].add(tShirt.get(i).getColor().ordinal());
+            index= tShirt.get(i).getColor().ordinal();
+            bucket[index].add(tShirt.get(i));
         }
-       int index = 0;
-        for (int i = 0; i < bucket.length; i++) {
+       int counter=0;
+        for (int i = 0; i < n; i++) {
             for (int j = 0; j < bucket[i].size(); j++) {
-                tShirt.set(index++, bucket[i].get(j));
+                tShirt.set(counter, bucket[i].get(j));
+                counter++;
             }
         }
         for (Tshirt t : tShirt){
